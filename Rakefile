@@ -5,7 +5,7 @@ namespace :lint do
     require 'rspec/core/rake_task'
 
     RSpec::Core::RakeTask.new(:yaml)
-  rescue LoadError => e
+  rescue LoadError => c
     task :spec do
       abort "Please run `gem install rspec` to install RSpec."
     end
